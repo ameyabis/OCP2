@@ -1,48 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d42e8378e0.js" crossorigin="anonymous"></script>
         <title>Reservia - Soutenance GJ</title>
     </head>
 
     <body>
-        <section id="nav-bar">
+        <!--NAVBAR-->
+        <nav id="nav-bar">
             <img src="img/logo/Reservia.svg" alt="Reservia">
-            <a href="#hebergement">Hébergement</a>
-            <a href="#activite">Activité</a>
-            <a href="#home">S'inscrire</a>
-        </section>
+            <ul>
+                <li><a href="#hebergement">Hébergement</a></li>
+                <li><a href="#activite">Activité</a></li>
+                <li><a href="#home">S'inscrire</a></li>
+            </ul>
+        </nav>
 
-        <section id="titre">
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <!--TITRE-->
+        <main id="titre">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou pleine nature</p>
-            <input type="text" id="recherche" name="recherche"><button class="recherche" type="button">Recherche</button>
-        </section>
+            <i class="fas fa-map-marker-alt"></i><input type="text" id="recherche" name="recherche"><button class="recherche" type="button">Recherche</button>
+        </main>
 
-        <section id="filtre">
+        <!--FILTRE-->
+        <aside id="filtre">
             <p>Filtre 
-                <button class="economique" type="button">Economique</button>
-                <button class="famillial" type="button">Famillial</button>
-                <button class="romantique" type="button">Romantique</button>
-                <button class="animaux-autorises" type="button">Animaux autorisés</button>
+                <button class="economique" type="button"><i class="fas fa-money-bill-wave"></i>Economique</button>
+                <button class="famillial" type="button"><i class="fas fa-universal-access"></i>Famillial</button>
+                <button class="romantique" type="button"><i class="fas fa-heart"></i>Romantique</button>
+                <button class="animaux-autorises" type="button"><i class="fas fa-dog"></i>Animaux autorisés</button>
             </p>
-        </section>
+            <p><i class="fas fa-info"></i></p>
+        </aside>
 
+        <!--LES HEBERGEMENTS-->
         <section id="hebergement">
             <h2>Hébergement à Marseille</h2>
-            <section id="hebergement-populaires">
-                <h2>Les plus populaires</h2>
-            </section>
+
+            <div class="hebergement-global">
+                <figure class="hebergement-image">
+                    <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                    <h3>Auberge de la Cannebièrre</h3>
+                    <p>Nuit à partir de <b>25€</b></p>
+                </figure>
+
+                <figure class="hebergement-image">
+                    <img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de <b>52€</b></p>
+                </figure>
+
+                <figure class="hebergement-image">
+                    <img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel Les mouettes">
+                    <h3>Hôtel Les mouettes</h3>
+                    <p>Nuit à partir de <b>76€</b></p>
+                </figure>
+
+                <figure class="hebergement-image">
+                    <img src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de La mer">
+                    <h3>Hôtel de La mer</h3>
+                    <p>Nuit à partir de <b>46€</b></p>
+                </figure>
+
+                <figure class="hebergement-image">
+                    <img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge Le Panier">
+                    <h3>Auberge Le Panier</h3>
+                    <p>Nuit à partir de <b>23€</b></p>
+                </figure>
+
+                <figure class="hebergement-image">
+                    <img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina">
+                    <h3>Hôtel chez Amina</h3>
+                    <p>Nuit à partir de <b>96€</b></p>
+                </figure>
+            </div>
         </section>
 
+        <!--LES PLUS POPULAIRE-->
+        <section id="populaire">
+            <h2>Les plus populaires</h2>
+            
+            <div class="populaire-global">
+                <figure class="populaire-image">
+                    <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel de La mer">
+                    <h3>Hôtel de La mer</h3>
+                    <p>Nuit à partir de <b>46€</b></p>
+                </figure>
+
+                <figure class="populaire-image">
+                    <img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="auberge Le Panier">
+                    <h3>Auberge Le Panier</h3>
+                    <p>Nuit à partir de <b>23€</b></p>
+                </figure>
+
+                <figure class="populaire-image">
+                    <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel chez Amina">
+                    <h3>Hôtel chez Amina</h3>
+                    <p>Nuit à partir de <b>96€</b></p>
+                </figure>
+            </div>
+        </section>
+
+        <!--LES ACTIVITES-->
         <section id="activite">
             <h2>Activité à Marseille</h2>
         </section>
 
-        <section id="bottom">
+        <!--FOOTER-->
+        <footer id="bottom">
             <div id="bottom-apropos">
                 <h3>A propos</h3>
                 <a href="#">Fonctionnement du site</a>
@@ -61,6 +131,6 @@
                 <a href="#">Centre d'aide</a>
                 <a href="#">Nous contacter</a>
             </div>
-        </section>
+        </footer>
     </body>
 </html>
