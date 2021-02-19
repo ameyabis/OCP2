@@ -491,7 +491,8 @@ figcaption .grey{
     }
 
     .hebergement-image{
-        width: 100%;
+        width: auto;
+        margin: 20px;
     }
 
     .hebergement-image img{
@@ -537,6 +538,15 @@ figcaption .grey{
 }
 
 @media screen and (max-width:1000px){
+    body{
+        margin: 0px;
+    }
+
+    #conteneur-page{
+        width: auto;
+        margin: 0px 10px 0px 10px;
+    }
+
     .populaire-global{
         flex-direction: column;
         justify-content: center;
@@ -610,11 +620,23 @@ figcaption .grey{
     }
 
     .hebergement-global .un-hebergement{
-        width: 50%;
+        width: 75%;
+    }
+
+    .activite-global figure{
+        margin: 5px 0px 5px 0px;
     }
 }
 
-@media screen and (max-device-width:550px){
+@media screen and (max-width:500px){
+    #conteneur-page{
+        margin: 0px;
+    }
+
+    nav, #titre, #filtre, #info, #activite{
+        margin: 10px;
+    }
+
     .recherche .text{
         display: none;
     }
@@ -628,5 +650,33 @@ figcaption .grey{
 
     .loupe i{
         width: 40px;
+    }
+
+    .hebergement-global .un-hebergement{
+        width: auto;
+    }
+
+    #hebergement{
+        background-color: #fff;
+        border-radius: initial;
+    }
+
+    #populaire{
+        border-radius: initial;
+    }
+
+    #activite{
+        width: auto;
+    }
+    .activite-global figure{
+        width: auto;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+
+    #bottom-apropos, #bottom-hebergement, #bottom-assist{
+        width: auto;
     }
 }
