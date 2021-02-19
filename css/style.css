@@ -7,6 +7,7 @@ body{
 
 #conteneur-page{
     margin: auto;
+    width: 100%;
     max-width: 1400px;
 }
 
@@ -477,6 +478,26 @@ figcaption .grey{
         order: 2;
     }
 
+    .hebergement-global{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hebergement-global .un-hebergement{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .hebergement-image{
+        width: 100%;
+    }
+
+    .hebergement-image img{
+        width: 100%;
+    }
+
     #populaire{
         width: 100%;
         align-items: center;
@@ -484,6 +505,60 @@ figcaption .grey{
         margin-bottom: 20px;
     }
 
+    .populaire-global{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .populaire-global .un-hebergement{
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width:1380px){
+    .activite-global{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .activite-image-long, .activite-image-large1, .activite-image-large2, .activite-image-large3{
+        width: 400px;
+    }
+
+    #activite img{
+        width: 100%;
+    }
+
+    .activite-global figure{
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .populaire-global{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .populaire-global .un-hebergement{
+        width: 100%;
+    }
+
+    .activite-global{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activite-image-long, .activite-image-large1, .activite-image-large2, .activite-image-large3{
+        height: 200px;
+    }
+
+    #activite img{
+        height: 70%;
+
+    }
 }
 
 @media screen and (max-width:930px){
@@ -527,9 +602,19 @@ figcaption .grey{
         justify-content: flex-end;
         width: auto;
     }
+
+    .hebergement-global{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hebergement-global .un-hebergement{
+        width: 50%;
+    }
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-device-width:550px){
     .recherche .text{
         display: none;
     }
