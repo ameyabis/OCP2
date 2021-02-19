@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -13,12 +14,17 @@
         <div id="conteneur-page">
             <!--NAVBAR-->
             <nav id="nav-bar">
-                <img src="img/logo/Reservia.svg" alt="Reservia">
-                <ul>
+                <div class="logo">
+                    <img src="img/logo/Reservia.svg" id="logo" alt="Reservia">
+                </div>
+                <ul class="nav">
                     <li><a href="#hebergement" class="vers-hebergement">Hébergement</a></li>
                     <li><a href="#activite" class="vers-activite">Activité</a></li>
-                    <li><a href="#home" class="vers-inscrit">S'inscrire</a></li>
                 </ul>
+
+                <div class="inscrit">
+                    <a href="#home" class="vers-inscrit">S'inscrire</a>
+                </div>
             </nav>
 
             <!--MAIN-->
@@ -27,7 +33,12 @@
                 <p>En plein centre ville ou pleine nature</p>
                 <div class="recherche">
                     <i class="fas fa-map-marker-alt"></i><input type="text" id="recherche-input" name="recherche" 
-                    value="Marseille, France"><button class="recherche-valider" type="button">Rechercher</button>
+                    value="Marseille, France"><button class="recherche-valider" type="button">
+                        <span class="text">Rechercher</span>
+                        <span class="loupe">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </span>
+                        </button>
                 </div>
             </main>
 
@@ -201,7 +212,7 @@
                             </a>
                         </div>
                     </div>
-                    <a href="#">Afficher plus</a>
+                    <a href="#" class="hebergement-lien">Afficher plus</a>
                 </section>
 
                 <!--LES PLUS POPULAIRE-->
